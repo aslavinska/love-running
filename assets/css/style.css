@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
@@ -23,7 +23,7 @@ h2 {
 #logo {
     float: left;
     font-size: 280%;
-    margin-left: 30px ;
+    margin-left: 30px;
 }
 
 /* navigation links */
@@ -33,14 +33,14 @@ h2 {
 }
 
 #menu li {
-    float : right;
+    float: right;
     list-style-type: none;
     margin-right: 30px;
 }
 
 #menu a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 
 }
 
@@ -52,16 +52,18 @@ h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-#hero-outer{
+#hero-outer {
     height: 600px;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 
-    position:relative;    
+    position: relative;
 
 }
-#cover-text, #cover-text h2 {
-    color:#fff;
+
+#cover-text,
+#cover-text h2 {
+    color: #fff;
 }
 
 #hero-image {
@@ -78,29 +80,30 @@ h2 {
 
 /* creates the level of zoom for hero image*/
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale (1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
 
 #cover-text {
     font-size: 130%;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
 
     width: 300px;
-    height:200px;
+    height: 200px;
 
     padding-top: 40px;
     padding-left: 10px;
 
-    background-color: rgba (241,109,107,.7);
+    background-color: rgba (241, 109, 107, .7);
 
-    bottom:30px;
+    bottom: 30px;
     right: 150px;
 
     position: absolute;
@@ -108,46 +111,48 @@ h2 {
 
 /* club-ethos */
 
-#club-ethos{
-    height:600px;
+#club-ethos {
+    height: 600px;
 }
 
-#left-about{
+#left-about {
     padding-top: 30px;
     width: 33%;
     float: left;
 }
 
-#right-about{
+#right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
 }
 
-#center-about{
-    
+#center-about {
+
     width: 33%;
     margin: 0 auto;
 }
 
 hr {
-    border-top: 1px solid #3a3a3a ;
+    border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 5px 0;
 }
-.left-about-heading{
+
+.left-about-heading {
     width: 60%;
     float: right;
     line-height: 20px;
-    clear:both;
+    clear: both;
     margin-bottom: 50px;
 
 }
-.right-about-heading{
+
+.right-about-heading {
     width: 60%;
     float: left;
     line-height: 20px;
-    clear:both;
+    clear: both;
     margin-bottom: 50px;
 
 }
@@ -156,7 +161,7 @@ hr {
     text-align: right;
 }
 
-.right-about-heading p{
+.right-about-heading p {
     text-align: right;
 }
 
@@ -196,8 +201,8 @@ hr {
 
 #times div {
     color: #fafafa;
-    background-color: rgba(0,0,0,.6);
-    width:20%;
+    background-color: rgba(0, 0, 0, .6);
+    width: 20%;
     height: 300px;
     float: left;
     padding: 30px 0 0 10px;
@@ -205,22 +210,26 @@ hr {
     border: 2px solid white;
     box-sizing: border-box;
 }
-#times h2{
+
+#times h2 {
     color: #fafafa;
 }
 
 /* footer */
 
-footer{
+footer {
     height: 150px;
 }
-.social-networks{
+
+.social-networks {
     text-align: center;
 }
-.social-networks > li {
-    display:inline;
+
+.social-networks>li {
+    display: inline;
 }
-.social-networks i{
+
+.social-networks i {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
@@ -231,32 +240,36 @@ footer{
 
 #photos {
     clear: both;
-    line-height:0;
+    line-height: 0;
     column-count: 4;
     column-gap: 0;
 }
 
-#photos >img {
-    width:100%;
+#photos>img {
+    width: 100%;
 }
 
 /* Media queries */
 /* For larger to medium screen size from 1200px wide down */
 @media screen and (max-width: 1200px) {
-    #club-ethos{
+    #club-ethos {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
     }
+
     #welcome {
         padding: 30px 0;
         margin: 0;
     }
-    #left-about, #right-about {
+
+    #left-about,
+    #right-about {
         width: 100%;
         float: left;
         padding: 0;
     }
+
     #center-about {
         clear: both;
         width: 100%;
@@ -264,7 +277,7 @@ footer{
         padding: 0;
     }
 
-    hr{
+    hr {
         display: none;
     }
 }
@@ -273,11 +286,33 @@ footer{
 
 @media screen and (max-width: 950px) {
     #menu {
-        clear:left;
+        clear: left;
         float: left;
-        margin-left:30px;
+        margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
-        
+
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    .left-about-heading, .right-about-heading{
+        width: inherit;
+    }
+    .left-about-heading h2, .right-about-heading h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p{
+        text-align: center;
+        padding: 0 20px;
     }
 }
